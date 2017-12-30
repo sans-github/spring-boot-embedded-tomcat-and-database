@@ -1,0 +1,5 @@
+  spring-boot-embedded-tomcat-and-database:
+    container_name: spring-boot-embedded-tomcat-and-database
+    image: com-san/spring-boot-embedded-tomcat-and-database:latest
+    ports:
+      - 39080:39080
