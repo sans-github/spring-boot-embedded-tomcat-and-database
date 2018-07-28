@@ -33,6 +33,10 @@ curl -sk http://localhost:39080/internal/health | python -m json.tool
 # API
 ## Request: Add user
     curl -sk -X POST http://localhost:39080/users -d "name=Dwight&email=Dwight@shrute.com" | python -m json.tool
+    curl -sk -X POST http://localhost:39080/users -d "name=Michael&email=Michael@scott.com" | python -m json.tool
 
 ## Request: Get all users
     curl -sk http://localhost:39080/users | python -m json.tool
+    
+## Request: Get a user by id
+    curl -sk http://localhost:39080/users/1 | python -m json.tool    
